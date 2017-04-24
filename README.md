@@ -6,8 +6,8 @@ Ready to use lean (120MB) Elasticsearch Docker image ready for using within a Ku
 
 ## Current software
 
-* OpenJDK JRE 8u112
-* Elasticsearch 5.2.2
+* OpenJDK JRE 8u121
+* Elasticsearch 5.3.0
 
 ## Run
 
@@ -19,5 +19,4 @@ This image can be configured by means of environment variables, that one can set
 
 Besides the [inherited ones](https://github.com/pires/docker-elasticsearch#environment-variables), this container image provides the following:
 
-* [DISCOVERY_SERVICE](https://github.com/fabric8io/elasticsearch-cloud-kubernetes#kubernetes-pod-discovery)
-* [NAMESPACE](https://github.com/fabric8io/elasticsearch-cloud-kubernetes#kubernetes-pod-discovery)
+* `DISCOVERY_SERVICE` - the service to be queried for through DNS.
