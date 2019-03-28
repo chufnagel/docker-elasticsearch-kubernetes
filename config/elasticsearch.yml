@@ -21,7 +21,6 @@ bootstrap:
   memory_lock: ${MEMORY_LOCK}
 
 http:
-  enabled: ${HTTP_ENABLE}
   compression: true
   cors:
     enabled: ${HTTP_CORS_ENABLE}
@@ -32,4 +31,5 @@ discovery:
     ping.unicast.hosts: ${DISCOVERY_SERVICE}
     minimum_master_nodes: ${NUMBER_OF_MASTERS}
 
-xpack.ml.enabled: false
+xpack:
+  security.enabled: ${XPACK_SECURITY_ENABLED}

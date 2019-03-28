@@ -1,4 +1,4 @@
-FROM docker.bulogics.com/docker-elasticsearch:6.4.2_kc2
+FROM docker.bulogics.com/docker-elasticsearch:6.6.0
 
 MAINTAINER kellyc@stratisiot.com
 
@@ -10,3 +10,5 @@ ENV DISCOVERY_SERVICE elasticsearch-discovery
 
 # Kubernetes requires swap is turned off, so memory lock is redundant
 ENV MEMORY_LOCK false
+
+ENV XPACK_SECURITY_ENABLED false
