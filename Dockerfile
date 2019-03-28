@@ -1,4 +1,4 @@
-FROM docker.bulogics.com/docker-elasticsearch:6.7.0
+FROM docker.bulogics.com/docker-elasticsearch:6.7.0_05
 
 MAINTAINER kellyc@stratisiot.com
 
